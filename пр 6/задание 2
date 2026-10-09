@@ -1,1 +1,29 @@
+nomer = int(input("введите номер от 1 до 36:"))
+if nomer < 0 or nomer > 36:
+    print("ошибка ввода")
+elif nomer == 0:
+    print("зеленый")
+else:
+    if 1 <= nomer <= 10:
+        if nomer % 2 != 0:
+            print("красный")
+        else:
+            print("черный")
 
+    elif 11 <= nomer <= 18:
+        if nomer % 2 != 0:
+            print("черный")
+        else:
+            print("красный")
+
+    elif 19 <= nomer <= 28:
+        if nomer % 2 != 0:
+            print("красный")
+        else:
+            print("черный")
+
+    elif 29 <= nomer <= 36:
+        if nomer % 2 != 0:
+            print("черный")
+        else:
+            print("красный")
