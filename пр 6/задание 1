@@ -1,1 +1,15 @@
+tempa = float(input("Введите температуру (°C): "))
+davlenie = int(input("Введите верхнее давление: "))
+pulse = int(input("Введите пульс (уд/мин): "))
+if (tempa < 35 or tempa > 38) or \
+   (davlenie < 105 or davlenie > 140) or \
+   (pulse < 55 or pulse > 110):
+    status = "требуется врач"
+elif (36 <= tempa <= 37) and \
+     (110 <= davlenie <= 130) and \
+     (60 <= pulse <= 100):
+    status = "нормальное состояние"
+else:
+    status = "легкое недомогание"
+print(status)
 
